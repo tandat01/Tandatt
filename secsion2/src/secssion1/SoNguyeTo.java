@@ -3,50 +3,45 @@ package secssion1;
 import java.util.Scanner;
 
 public class SoNguyeTo {
-    public void main(){
-        int a;
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("So nguyen to a:");
-        a=scanner.nextInt();
-        if (a>0){
-            if (kiemtrasonguyeto(a)==1)
-                System.out.println("A la so nguyen to:"+a);
+    public int a;
+    public int getA(){
+        return a;
+    }
+    public SoNguyeTo(){//() ham khoi tao
+        System.out.println("Vua tao 1 doi tuong SNT");
+        setA(1);
+    }
+    public SoNguyeTo(int x){
+        setA(x);
+    }
+
+    public void setA(int a){
+        if(isSoNguyenTo(a)) {
+            this.a = a;
+        }else {
+            System.out.println("khong set gia tri");
         }
     }
-    public static void main(String args[]) {
-        int n;
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Nhap so n:");
-        n=scanner.nextInt();
-        if (n>0){
-            if (kiemtrasonguyeto(n)==1)
-                System.out.println("La so nguyen to:"+n);
-            else
-                System.out.println("Khong phai la so nguyen to");
+    public boolean isSoNguyenTo(int x){
+        for (int i=2;i<=x/2;i++){
+            if (x%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
 
+
+
+    public int timSoNguyeToTiepTheo(){
+        for (int i=a+1;true;i++){
+            if (isSoNguyenTo(i)){
+                setA(i);
+                return i;
+            }
         }
     }
-    public static int kiemtrasonguyeto(int n){
-        int tem=0;
-        for (int i = 1;i<=n;i++){
-            if (n%i==0)
-                tem++;
-        }
-        if (tem==2)
-            return 1;
 
-        else return 0;
-    }
-
-
-
-    public void timSoNguyeTo(){
-
-
-    }
-    public void GanVao(){
-
-    }
 }
 
 
