@@ -1,7 +1,6 @@
 package sec1;
 
 
-import secssion1.SoNguyeTo;
 
 public class Main {
     public static void main(String args[]) {
