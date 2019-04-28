@@ -1,7 +1,5 @@
 package sec1;
 
-
-
 public class Main {
     public static void main(String args[]) {
         SoNguyeTo snt = new SoNguyeTo();//dựa theo () để chọn
