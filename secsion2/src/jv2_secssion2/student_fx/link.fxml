@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane fx:controller="jv2_secssion2.student_fx.StudentLink" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="txtLink" layoutX="9.0" layoutY="102.0" prefHeight="285.0" prefWidth="576.0" />
+      <Hyperlink onAction="#toAss" layoutX="32.0" layoutY="14.0" text="&lt;&lt; Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</Pane>

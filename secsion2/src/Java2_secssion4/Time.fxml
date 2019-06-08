@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane fx:controller="Java2_secssion4.Time" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtTim" layoutX="182.0" layoutY="62.0" prefHeight="25.0" prefWidth="224.0" promptText="Time" />
+      <Button onAction="#submit" layoutX="248.0" layoutY="207.0" mnemonicParsing="false" text="Start" textFill="#0d77e8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtRun" layoutX="181.0" layoutY="375.0" prefHeight="25.0" prefWidth="224.0" />
+   </children>
+</Pane>
