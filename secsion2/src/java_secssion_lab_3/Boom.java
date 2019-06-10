@@ -19,7 +19,7 @@ public class Boom {
                         }catch (Exception e){}
                     }
                 }
-                System.out.println("Buuuuuum.....");
+                System.out.println(minutes);
             }
         };
 
